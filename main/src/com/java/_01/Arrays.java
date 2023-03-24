@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class Arrays {
 
     public static void main(String[] args) {
-        int[] c_style = null; // really not recommend
+        int[] c_style = null; // really do not recommend
         int[] arr = new int[10];
 //        System.out.println(arr[-1]);
 //        System.out.println(arr[10]);
