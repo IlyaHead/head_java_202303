@@ -1,4 +1,4 @@
-package com.java.first;
+package com.java._00;
 
 public class Greeter {
 
