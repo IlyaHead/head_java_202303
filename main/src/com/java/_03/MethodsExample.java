@@ -59,7 +59,6 @@ public class MethodsExample {
       signature:
         methodName(int, int, String)
 
-
       specifiers:
         public
         protected
@@ -73,5 +72,10 @@ public class MethodsExample {
         native
    */
 
+  public void overloadingExample(){
+    String s1 = String.valueOf('1');
+    String s2 = String.valueOf(true);
+    String s3 = String.valueOf("1");
+  }
 
 }
