@@ -1,8 +1,9 @@
 package com.java._03;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class DynamicArray {
+public class DynamicArray implements Iterable{
 
   private Object[] values = {};
   private int size;
@@ -10,6 +11,11 @@ public class DynamicArray {
   public DynamicArray() {
     values = new Object[0];
     size = 0;
+  }
+
+  @Override
+  public Iterator iterator() {
+    return new DynamicArrayIterator();
   }
 
   public void add(Object value) {
@@ -88,4 +94,29 @@ public class DynamicArray {
   public String toString() {
     return Arrays.toString(values);
   }
+
+  public void clean() {
+    values = new Object[0];
+    size = 0;
+  }
+
+  //static class => nested
+  //class => inner
+  private class DynamicArrayIterator implements Iterator{
+
+    private int position;
+
+
+    @Override
+    public boolean hasNext() {
+      return position != size;
+    }
+
+    @Override
+    public Object next() {
+      return values[position++];
+    }
+  }
 }
+
+
