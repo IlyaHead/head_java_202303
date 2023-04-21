@@ -1,8 +1,6 @@
 package com.java._03;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Comparator;
 
 public class InterfaceExample {
